@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@using RESTfulXLS.Models
+@model IEnumerable<Tender>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<table class="table">
+@foreach(Tender a in Model)
+{
+    <tr><td>@a.Id</td><td>@a.Name</td><td>@a.DateStart</td><td>@a.DateEnd</td><td>@a.Url</td></tr>
+}   
+</table>

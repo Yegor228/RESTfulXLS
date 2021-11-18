@@ -1,0 +1,22 @@
+﻿@using RESTfulXLS.Models;
+@model RESTfulXLS.Models.User;
+
+@{
+	Layout = "~/Views/_Layout.cshtml";
+}
+<header>
+    <h2>Create User</h2>
+</header>
+
+<form method ="post">
+  <div class="mb-3">
+    <label class="form-label">Login</label>
+    <input type="text" class="form-control" name="Name">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="password" class="form-control" name="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</nav>

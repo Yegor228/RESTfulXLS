@@ -1,0 +1,31 @@
+﻿@{
+	Layout = "~/Views/_Layout.cshtml";
+}
+@using RESTfulXLS.Models
+@model IEnumerable<Tender>
+
+<header>
+    <h2>Authorization</h2>
+</header>
+
+
+<form method ="post">
+  <div class="mb-3">
+    <label class="form-label">Login</label>
+    <input type="text" class="form-control" name="Name">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="password" class="form-control" name="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</nav>
+
+
+<table class="table">
+@foreach(Tender a in Model)
+{
+    <tr><td>@a.Id</td><td>@a.Name</td><td>@a.DateStart</td><td>@a.DateEnd</td><td>@a.Url</td></tr>
+}   
+</table>

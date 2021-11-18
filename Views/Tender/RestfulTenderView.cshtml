@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="~/Tender/Print" class="navbar-brand">OutputJson</a></li>
+                    </div>
+                </div>
+</nav>
+
+<div class="InputTender" >
+    <h2>Insert tender</h2>
+    <form method ="post"> 
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="name">
+        <label class="form-label">DateStart</label>
+        <input type="datetime" class="form-control" name="dStart">
+        <label class="form-label">DateEnd</label>
+        <input type="datetime" class="form-control" name="dEnd">
+        <label class="form-label">Url</label>
+        <input type="string" class="form-control" name="url">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<div class="UpdateTender">
+    <h2>Update tender</h2>
+    <form method ="post">
+        <label class="form-label">Id</label>
+        <input type="number" class="form-control" name="id">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="name"> 
+        <label class="form-label">DateStart</label>
+        <input type="date" class="form-control" name="dateStart">
+        <label class="form-label">DateEnd</label>
+        <input type="date" class="form-control" name="dateEnd">
+        <label class="form-label">Url</label>
+        <input type="string" class="form-control" name="url">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<div class="DeleteTender">
+    <h2>Delete tender</h2>
+    <form method ="post">
+        <label class="form-label">Id</label>
+        <input type="number" class="form-control" name="id">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

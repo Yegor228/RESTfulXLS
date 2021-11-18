@@ -1,0 +1,12 @@
+﻿@model IEnumerable<RESTfulXLS.Models.User>
+@{
+	Layout = "~/Views/_Layout.cshtml";
+}
+
+<table class="table">
+     <tr><td>Id</td><td>Name</td><td>Password</td><td>Base64Code</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.Id</td><td>@item.Name</td><td>@item.Password</td><td>@item.Base64Code</td></tr>
+    }
+</table>
